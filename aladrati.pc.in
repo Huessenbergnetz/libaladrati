@@ -1,0 +1,11 @@
+prefix=$$PREFIX
+exec_prefix=${prefix}
+libdir=$$INSTALL_LIB_DIR
+includedir=$$INSTALL_HEADERS_DIR
+
+Name: libaladrati
+Description: Qt based library to perform internet connection speed tests using speedtest.net
+Version: $$VERSION
+Libs: -L${libdir} -laladrati
+Cflags: -I${includedir}
+Requires: Qt5Core Qt5Network
